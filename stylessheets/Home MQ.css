@@ -1,0 +1,163 @@
+/* Side Nav */
+@media all and (200px <= width <= 800px) {
+    body{
+      overflow-x: hidden;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        text-align: center;
+        display: block;
+        transition: 0.3s;
+    }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+        text-decoration: underline;
+    }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+}
+@media all and (max-width:820px){
+    body{
+      overflow-x: hidden;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        text-align: center;
+        display: block;
+        transition: 0.3s;
+        text-align: center;
+    }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+    }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      .sidenav .closebtn:hover{
+        text-decoration: none;
+      }
+
+
+      /* Carousel */
+      .carousel-control-prev,
+      .carousel-control-next {
+        z-index: 0;
+      }
+      .carousel-text {
+        width: 100%;
+        padding: 8px 10px;
+        position: absolute;
+        bottom: 8px;
+        color: #fff;
+    }  
+}
+@media all and (max-width:280px) {
+  .carousel-text{
+    font-size: 0.7rem;
+  }
+}
+@media all and (200px <= width <= 600px) {
+    /* Brands */
+    body{
+      overflow-x: hidden;
+    }
+    .f-row{
+      flex-wrap: wrap;
+    }
+    .s-row{
+      flex-wrap: wrap;
+    }
+    .t-row{
+      flex-wrap: wrap;
+    }
+}
+
+/* Recommendations */
+@media all and (max-width: 820px) {
+  body{
+    overflow-x: hidden;
+  }
+
+  .content img{
+    object-fit: contain;
+    width: 400px;
+    margin-right: 10%;
+  }
+  .content {
+    flex-wrap: wrap;
+  }
+  
+}
+/* offers */
+@media all and (200px <= width <= 820px) {
+  #offers .After-sales a{
+    object-fit: contain;
+    flex-wrap: wrap;
+  }
+  #offers .AutoWorld-accessories a{
+    object-fit: contain;
+    flex-wrap: wrap;
+  }
+  #offers .Customer-services a{
+    object-fit: contain;
+    flex-wrap: wrap;
+  }
+}
+
+/* footer */
+@media all and (max-width: 820px) {
+  #socials{
+    display: block;
+  }
+  .policies span a{
+    font-size: .6rem;
+  }
+  .rights{
+    font-size: .2rem;
+  }
+}
