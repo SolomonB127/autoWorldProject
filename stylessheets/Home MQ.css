@@ -135,19 +135,22 @@
 }
 /* offers */
 @media all and (200px <= width <= 820px) {
-  #offers .After-sales a{
-    object-fit: contain;
+  .offers {
+    flex-direction: column;
     flex-wrap: wrap;
   }
-  #offers .AutoWorld-accessories a{
-    object-fit: contain;
-    flex-wrap: wrap;
-  }
-  #offers .Customer-services a{
-    object-fit: contain;
-    flex-wrap: wrap;
+  .offers img{
+    width: 100%;
   }
 }
+
+/* Reviews */
+@media all and (200px <= width <= 820px) {
+  .Reviews-con{
+    display: none;
+  }
+}
+
 
 /* footer */
 @media all and (max-width: 820px) {

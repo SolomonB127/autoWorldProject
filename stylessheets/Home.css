@@ -303,6 +303,28 @@ nav li a:hover{
    font-weight: bolder;
 }
 
+/* Reviews */
+.Reviews-con{
+    margin-top: 50px;
+}
+.Reviews-con h2{
+    text-align: center;
+    text-decoration: underline;
+    font-style: oblique;
+}
+.Reviews-con img{
+    width: 15%;
+    border-radius: 60%;
+}
+.review-caption{
+    color: #000;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 5%;
+    font-weight: bold;
+}
+
 /* Footer */
 footer{
     width: 100%;
