@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylessheets/bank.css">
+    <link rel="stylesheet" href="stylessheets\bootstrap.css">
+    <link rel="stylesheet" href="stylessheets\Home MQ.css">
+    <link rel="stylesheet" href="stylessheets\Home.css">
+    <script defer src="scripts\bootstrap.bundle.js"></script>
+    <script defer src="scripts\Home.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <!-- Side Nav -->
+        <div id="mySidenav" class="sidenav">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Home.html">Home</a>
+            <hr>
+            <a href="#about">About</a>
+            <hr>
+            <a href="Catalogue.html">Catalogue</a>
+            <hr>
+            <a href="Contact.html">Contact</a>
+            <hr>
+            <a href="Warranty info.html">Warranty Info.</a>
+            <hr>
+            <a href="bank.html">Payment Info.</a>
+            <hr>
+        </div>
+            <div id="open">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+            <div>
+            <img src="Homepictures\Auto World(i).png" alt="">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="Catalogue.html">Catalogue</a>
+                </li>
+                <li>
+                    <a href="Contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="Warranty info.html">Warranty Info.</a>
+                </li>
+                <li>
+                    <a href="bank.html">Payment Info.</a>
+                </li>
+            </ul>
+         </div>
+    </nav>
+
+    <!-- content -->
+    <div class="body">
+        <div class="container">
+            <div class="title">
+                <h4>Select a <span style="color: #6064b6">Payment</span> method</h4>
+            </div>
+
+            <form action="#">
+                <input type="radio" name="payment" id="visa">
+                <input type="radio" name="payment" id="mastercard">
+                <input type="radio" name="payment" id="paypal">
+                <input type="radio" name="payment" id="AMEX">
+
+
+                <div class="category">
+
+                    <label for="visa" class="visaMethod">
+                        <div class="imgName">
+
+                            <a href="payment.html" class="imgContainer visa">
+                                <img src="bank-img/Visa-Card.png" alt="">
+                            </a>
+
+                            <span class="name">VISA</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                    </label>
+
+                    <label for="mastercard" class="mastercardMethod">
+                        <div class="imgName">
+                            <a href="payment.html" class="imgContainer mastercard">
+                                <img src="bank-img/mastercard.jpg" alt="">
+                            </a>
+                            <span class="name">Mastercard</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                    </label>
+
+                    <label for="paypal" class="paypalMethod">
+                        <div class="imgName">
+                            <a href="payment.html" class="imgContainer paypal">
+                                <img src="bank-img/paypal.png" alt="">
+                            </a>
+                            <span class="name">Paypal</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                    </label>
+
+
+                    <label for="AMEX" class="amexMethod">
+                        <div class="imgName">
+                            <a href="payment.html" class="imgContainer AMEX">
+                                <img src="bank-img/American-Express.jpg" alt="">
+                            </a>
+                            <span class="name">AMEX</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                    </label>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!-- footer -->
+
+<div class="conatiner-fliud brand-con">
+    <div class="row">
+        <div class="col">
+            <footer>
+                <section>
+                    <div id="socials">
+                        <span>Follow Us:
+                            <a href="www.facebook.com">
+                                <img src="Homepictures\icons8-facebook-120.png" alt="" width="30"></a>
+                            <a href="www.instagram.com">
+                                <img src="Homepictures\pngtree-instagram-social-flat-silhouette-icons-png-image_6315977.png"
+                                    alt="" width="30"></a>
+                            <a href="www,pintrest.com">
+                                <img src="Homepictures\icons8-pinterest-120.png" alt="" width="30"></a>
+                            <a href="www.twitter.com">
+                                <img src="Homepictures\icons8-twitter-150.png" alt="" width="30"></a>
+                            <hr>
+                        </span>
+                    </div>
+
+                    <div class="policies">
+                        <span>
+                            <a href="#">PRIVACY POLICY</a>
+                            <a href="#">COPYRIGHT</a>
+                            <a href="#">LEGAL POLICY</a>
+                            <a href="#">COOKIE POLICY</a>
+                        </span>
+                    </div>
+
+                    <div class="rights">
+                        <p>&copy;2023 AutoWorld All Rights Reserved</p>
+                    </div>
+                </section>
+            </footer>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
