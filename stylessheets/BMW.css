@@ -149,9 +149,14 @@ nav li a:hover{
     text-decoration: none;
     transition: background-color .3s;
 }
-  
+
+.active{
+    background-color: #0000ff;
+}
+
 .pagination a:hover {
-    background-color: dodgerblue;
+    background-color: rgb(137, 145, 153);
+    color: #000;
     text-decoration: none;
 }
 

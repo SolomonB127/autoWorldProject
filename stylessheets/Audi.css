@@ -153,31 +153,26 @@ nav li a:hover{
     background-color: rgba(0, 0, 0, 0.8);
   }
 
-  /* Modal Content */
-  .modal-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    color: #000;
-    width: 80%;
-  }
-  
-  /* Close Button */
-  .close {
-    color: #888;
-    float: right;
-    font-size: 28px;
+   /* pagination */
+ .pagination a {
+    color: black;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.active{
+    background-color: #0000ff;
+}
+
+.pagination a:hover {
+    background-color: rgb(137, 145, 153);
     color: #000;
     text-decoration: none;
-    cursor: pointer;
-  }
-
+}
+ 
+/* footer */
   footer{
     width: 100%;
     height: fit-content;
