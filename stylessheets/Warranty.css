@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .brand-con{
     overflow-x: hidden;
@@ -193,4 +194,44 @@ nav li a:hover{
     border: 1px solid #ccc;
     display: flex;
     align-items: center;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: fit-content;
+    margin-top: 40px;
+    background-color: #000;
+    color: #fff;
+}
+#socials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#socials span{
+    font-size: 1.9rem;
+    font-weight: bolder;
+    margin-right: 40px;
+}
+#socials img{
+    margin-right: 20px;
+}
+.policies span{ 
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.policies span a{ 
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.rights{
+    text-align: center;
+    font-size: .8rem;
+}
+footer hr{
+    background-color: #fff;
 }

@@ -117,6 +117,21 @@
   #warranty-schemes{
     flex-wrap: wrap;
   }
-
-  /* Adjust other styles as needed for responsiveness */
 }
+
+/* footer */
+@media all and (max-width: 820px) {
+  #footer-container{
+   overflow-x: hidden;
+  }
+   #socials{
+     display: block;
+   }
+   .policies span a{
+     font-size: .6rem;
+   }
+   .rights{
+     font-size: .2rem;
+   }
+ }
+ 

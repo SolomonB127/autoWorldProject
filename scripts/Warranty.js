@@ -10,42 +10,41 @@ function closeNav() {
 // Car Brands Warranty
 const warrantyInfo = {
   audi: {
-    text: "Audi offers a 3-year/36,000-mile basic warranty and a 5-year/60,000-mile powertrain warranty.",
+    text: "Basic Warranty: 4 years/50,000 miles.Powertrain Warranty: 4 years/50,000 miles.Corrosion Perforation Warranty: 12 years/unlimited miles.Roadside Assistance: 4 years/unlimited miles",
     image: "WarrantyImg/wallpaperflare.com_wallpaper (2).jpg"
   },
   bmw: {
-    text: "BMW provides a 4-year/50,000-mile basic warranty and a 4-year/50,000-mile powertrain warranty.",
+    text: "Baisc Warranty: 4 years/50,000 miles.Powertrain Warranty: 4 years/50,000 miles.Corrosion Perforation Warranty: 12 years/unlimited miles.Roadside Assistance: 4 years/unlimited miles",
     image: "WarrantyImg/wallpaperflare.com_wallpaper (1).jpg"
   },
   mercedes: {
-    text: "Mercedes-Benz includes a 4-year/50,000-mile basic warranty and a 4-year/50,000-mile powertrain warranty.",
+    text: "Basic Warranty: 4 years/50,000 miles.Powertrain Warranty: 4 years/50,000 miles.Corrosion Warranty: 4 years/50,000 miles.Roadside Assistance: 4 years/50,000 miles.",
     image: "WarrantyImg/corrosion.jpeg"
   },
   lexus: {
-    text: "Mercedes-Benz includes a 4-year/50,000-mile basic warranty and a 4-year/50,000-mile powertrain warranty.",
+    text: "Basic Warranty: 4 years/50,000 miles.Powertrain Warranty: 6 years/70,000 miles.Hybrid System Warranty: 8 years/100,000 miles.Roadside Assistance: 4 years.",
     image: "WarrantyImg/gettyimages-461062741-1-626x382-1614382609.jpg"
   },
   ford: {
-    text: "Mercedes-Benz includes a 4-year/50,000-mile basic warranty and a 4-year/50,000-mile powertrain warranty.",
+    text: "Basic Warranty: 3 years/36,000 miles.Powertrain Warranty: 5 years/60,000 miles.Corrosion Warranty: 5 years/unlimited miles.Roadside Assistance: 5 years/60,000 miles.",
     image: "WarrantyImg/AdobeStock_288590637.jpg.webp"
   },
   honda: {
-    text: "Mercedes-Benz includes a 4-year/50,000-mile basic warranty and a 4-year/50,000-mile powertrain warranty.",
+    text: "Basic Warranty: 3 years/36,000 miles. Powertrain Warranty: 5 years/60,000 miles.Hybrid Warranty: 8 years/100,000 miles.Roadside Assistance: 3 years.",
     image: "WarrantyImg/RepairSmith-8.jpg"
   },
   toyota: {
-    text: "Mercedes-Benz includes a 4-year/50,000-mile basic warranty and a 4-year/50,000-mile powertrain warranty.",
+    text: "Basic Warranty: 3 years/36,000 miles.Powertrain Warranty: 5 years/60,000 miles.Hybrid Component Warranty: 8 years/100,000 miles.Roadside Assistance: 2 years.",
     image: "WarrantyImg/painting.jpeg"
   },
   kia: {
-    text: "Mercedes-Benz includes a 4-year/50,000-mile basic warranty and a 4-year/50,000-mile powertrain warranty.",
+    text: "Basic Warranty: 5 years/60,000 miles.Powertrain Warranty: 10 years/100,000 miles.Corrosion Warranty: 5 years/unlimited miles.Roadside Assistance: 5 years.",
     image: "WarrantyImg/images (1).jpg"
   },
   hyundai: {
-    text: "Mercedes-Benz includes a 4-year/50,000-mile basic warranty and a 4-year/50,000-mile powertrain warranty.",
+    text: "Basic Warranty: 5 years/60,000 miles.Powertrain Warranty: 10 years/100,000 miles.Corrosion Warranty: 7 years/unlimited miles.Roadside Assistance: 5 years.",
     image: "WarrantyImg/images.jpg"
   }
-  // Add warranty information and image URLs for other car brands here
 };
 
 const warrantyDisplay = document.getElementById('warranty-info');
