@@ -108,12 +108,6 @@ nav li a:hover::after{
     font-size: 12px;
 }
 
-#bb{
-    object-fit: cover;
-    background-image: url(IMGCON1.jpg);
-    background-size: 1350px 80vh;
-    background-repeat: no-repeat;
-}
 
 #ee{
     color: #212529;
