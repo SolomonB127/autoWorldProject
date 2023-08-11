@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="scripts\JQuery Download\JQuery.js"></script>
     <link rel="stylesheet" href="stylessheets\bootstrap.css">
-    <link rel="stylesheet" href="stylessheets\Home MQ.css">
-    <link rel="stylesheet" href="stylessheets\Home.css">
-    <link rel="stylesheet" href="catalogue.css">
-    <script defer src="scripts\bootstrap.bundle.js"></script>
-    <script defer src="scripts\Home.js"></script>
-    <title>Catalogue</title>
+    <link rel="stylesheet" href="stylessheets\Catalogue MQ.css">
+    <link rel="stylesheet" href="stylessheets\Catalogue.css">
+    <script src="scripts\bootstrap.bundle.js"></script>
+    <script src="scripts\Catalogue.js"></script>
+    <title>AutoWorld Catalogue</title>
 </head>
-
 <body>
-
-    <!-- Nav Section -->
-    <nav>
+      <!-- Nav Section -->
+      <nav>
         <!-- Side Nav -->
         <div id="mySidenav" class="sidenav">
             <a class="closebtn" onclick="closeNav()">&times;</a>
@@ -57,127 +54,355 @@
         </div>
     </nav>
 
+    <!-- Contents -->
+    <div class="container brand-con">
+        <div class="row">
+            <div class="col">
+                <section id="catalogue-heading">
+                    <div>
+                        <h2>Choose from a wide Variety of options that suits your style.</h2>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
 
-
-
-    <div class="main">
-
-        <div class="m-cars">
-            <a class="a" href="BMW.html">
-                <h1 class="text-bmw">BMW</h1>
-            </a>
-            <div class="bmw">
-
+    <!-- Cars Catalogue -->
+    <section id="Cars" class="brand-con">
+        <div class="car-card" onclick="toggleDetails('car1')">
+            <img src="CatalogueImg\🖼 📸Audi SQ8 E-Tron.jpg" alt="Car 1" class="car-image">
+            <h3>Audi SQ8 E-Tron</h3>
+            <button>Learn More</button>
+            <div id="car1-details" class="details">
+              <span class="close-button" onclick="toggleDetails('car1')">X</span>
+              <h4>Details</h4>
+              <p>Features: Turbocharged 3.0-liter V-6 Engine</p>
+              <p>Price: $90,995</p>
+              <p>Dealer: AutoWorld Inc</p>
+            </div>
+        </div>
+          
+        <div class="car-card" onclick="toggleDetails('car2')">
+            <img src="CatalogueImg\2014 kia soul in red.jpg" alt="Car 2" class="car-image">
+            <h3>Kia Soul</h3>
+            <button>Learn More</button>
+            <div id="car2-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car2')">X</span>
+                <h4>Details</h4>
+                <p>Features: 2.0-liter V4 Engine</p>
+                <p>Price: $19,890</p>
+                <p>Dealer: AutoWorld Inc</p>
             </div>
         </div>
 
-        <div class="m-cars">
-            <a href="Mercedes.html" class="a">
-                <h1>Mercedes</h1>
-            </a>
-            <div class="mercedes">
+        <div class="car-card" onclick="toggleDetails('car3')">
+            <img src="CatalogueImg\2021 MODEL TOYOTA FORTUNER 2_8L DIESEL AUTOMATIC.jpg" alt="Car 2" class="car-image">
+            <h3>Toyota Fortuner</h3>
+            <button>Learn More</button>
+            <div id="car3-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car3')">X</span>
+                <h4>Details</h4>
+                <p>Features: AN160 4.0 V6 4WD Automatic Engine</p>
+                <p>Price: $50,000</p>
+                <p>Dealer: AutoWorld Inc</p>
             </div>
         </div>
 
-        <div class="m-cars">
-            <a href="Hyundai.html" class="a">
-                <h1>Hyundai</h1>
-            </a>
-            <div class="hyundai">
-            </div>
-        </div>
-        
-        <div class="m-cars">
-            <a href="Audi.html" class="a">
-                <h1>Audi</h1>
-            </a>
-            <div class="audi">
+        <div class="car-card" onclick="toggleDetails('car4')">
+            <img src="CatalogueImg\2022 Honda Ridgeline Lacks The Trim We Really Want.jpg" alt="Car 2" class="car-image">
+            <h3>Honda RidgeLine</h3>
+            <button>Learn More</button>
+            <div id="car4-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car4')">X</span>
+                <h4>Details</h4>
+                <p>Features: 3.5-liter V6 Engine</p>
+                <p>Price: $38,800</p>
+                <p>Dealer: AutoWorld Inc</p>
             </div>
         </div>
 
-        <div class="m-cars">
-            <a href="Ford.html" class="a">
-                <h1>Ford</h1>
-            </a>
-            <div class="ford">
+        <div class="car-card" onclick="toggleDetails('car5')">
+            <img src="CatalogueImg\2022 Lexus NX SUV.jpg" alt="Car 2" class="car-image">
+            <h3>Lexus NX</h3>
+            <button>Learn More</button>
+            <div id="car5-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car5')">X</span>
+                <h4>Details</h4>
+                <p>Features: 203-hp 2.5-liter V4 Engine</p>
+                <p>Price: $41,928</p>
+                <p>Dealer: AutoWorld Inc</p>
             </div>
         </div>
 
-        <div class="m-cars">
-            <a href="Honda.html" class="a">
-                <h1>Honda</h1>
-            </a>
-            <div class="honda">
+        <div class="car-card" onclick="toggleDetails('car6')">
+            <img src="CatalogueImg\Air suspension hr-v.jpg" alt="Car 2" class="car-image">
+            <h3>Honda HR-V</h3>
+            <button>Learn More</button>
+            <div id="car6-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car6')">X</span>
+                <h4>Details</h4>
+                <p>Features: 158-horsepower V4 Engine</p>
+                <p>Price: $24,100</p>
+                <p>Dealer: AutoWorld Inc</p>
             </div>
         </div>
 
-        <div class="m-cars">
-            <a href="Kia.html" class="a">
-                <h1>KIA</h1>
-            </a>
-            <div class="kia">
+        <div class="car-card" onclick="toggleDetails('car7')">
+            <img src="CatalogueImg\AUDI A7(i).jpg" alt="Car 2" class="car-image">
+            <h3>Audi A7</h3>
+            <button>Learn More</button>
+            <div id="car7-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car7')">X</span>
+                <h4>Details</h4>
+                <p>Features: Turbocharged V6 Engine</p>
+                <p>Price: $70,200</p>
+                <p>Dealer: AutoWorld Inc</p>
             </div>
         </div>
 
-        <div class="m-cars">
-            <a href="Lexus.html" class="a">
-                <h1>LEXUS</h1>
-            </a>
-            <div class="lexus">
+        <div class="car-card" onclick="toggleDetails('car8')">
+            <img src="CatalogueImg\Audi TT 8S White Vossen CVT.jpg" alt="Car 2" class="car-image">
+            <h3>Audi TT 8S</h3>
+            <button>Learn More</button>
+            <div id="car8-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car8')">X</span>
+                <h4>Details</h4>
+                <p>Features: Quattaro V8 Engine</p>
+                <p>Price: $111,669</p>
+                <p>Dealer: AutoWorld Inc</p>
             </div>
         </div>
 
-        <div class="m-cars">
-            <a href="Toyota.html" class="a">
-                <h1>TOYOTA</h1>
-            </a>
-            <div class="toyota">
+        <div class="car-card" onclick="toggleDetails('car9')">
+            <img src="CatalogueImg\BMW i8.jpg" alt="Car 2" class="car-image">
+            <h3>BMW i8</h3>
+            <button>Learn More</button>
+            <div id="car9-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car9')">X</span>
+                <h4>Details</h4>
+                <p>Features: turbocharged 1.5-liter three-cylinder gas Engine</p>
+                <p>Price: $45,000</p>
+                <p>Dealer: AutoWorld Inc</p>
             </div>
         </div>
 
-        <!-- Footer -->
-        <div class="conatiner-fliud brand-con">
-            <div class="row">
-                <div class="col">
-                    <footer>
-                        <section>
-                            <div id="socials">
-                                <span>Follow Us:
-                                    <a href="www.facebook.com">
-                                        <img src="Homepictures\icons8-facebook-120.png" alt="" width="30">
+        <div class="car-card" onclick="toggleDetails('car10')">
+            <img src="CatalogueImg\Camden’s featured ride for [2-27-21]Hyundai Veloster N.jpg" alt="Car 2" class="car-image">
+            <h3>Hyundai Veloster N</h3>
+            <button>Learn More</button>
+            <div id="car10-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car10')">X</span>
+                <h4>Details</h4>
+                <p>Features: turbocharged 2.0-liter four-cylinder Engine</p>
+                <p>Price: $33,595</p>
+                <p>Dealer: AutoWorld Inc</p>
+            </div>
+        </div>
+
+        <div class="car-card" onclick="toggleDetails('car11')">
+            <img src="CatalogueImg\Carros na Web _ BMW X2 xDrive M35i 2_0 2019.jpg" alt="Car 2" class="car-image">
+            <h3>BMW X2</h3>
+            <button>Learn More</button>
+            <div id="car11-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car11')">X</span>
+                <h4>Details</h4>
+                <p>Features: 2.0L BMW TwinPower Turbo inline V4 Engine</p>
+                <p>Price: $36,600</p>
+                <p>Dealer: AutoWorld Inc</p>
+            </div>
+        </div>
+
+        <div class="car-card" onclick="toggleDetails('car12')">
+            <img src="CatalogueImg\GERMANSELL Trittbretter für Audi Q7, 309,00 €.jpg" alt="Car 2" class="car-image">
+            <h3>Audi Q7</h3>
+            <button>Learn More</button>
+            <div id="car12-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car12')">X</span>
+                <h4>Details</h4>
+                <p>Features: 3.0L turbocharged V6 Engine</p>
+                <p>Price: $60,500</p>
+                <p>Dealer: AutoWorld Inc</p>
+            </div>
+        </div>
+
+        <div class="car-card" onclick="toggleDetails('car13')">
+            <img src="CatalogueImg\The 2020 BMW Z4.jpg" alt="Car 2" class="car-image">
+            <h3>BMW Z4</h3>
+            <button>Learn More</button>
+            <div id="car13-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car13')">X</span>
+                <h4>Details</h4>
+                <p>Features: S54 straight-six Engine.</p>
+                <p>Price: $54,595</p>
+                <p>Dealer: AutoWorld Inc</p>
+            </div>
+        </div>
+
+        <div class="car-card" onclick="toggleDetails('car14')">
+            <img src="CatalogueImg\The 2024 Mercedes-Benz E-Class Prioritizes Tech-Savviness While Remaining Classic.jpg" alt="Car 2" class="car-image">
+            <h3>Mercedes-Benz E-Class</h3>
+            <button>Learn More</button>
+            <div id="car14-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car14')">X</span>
+                <h4>Details</h4>
+                <p>Features: 2.0-litre V4 23bhp electric motor Engine</p>
+                <p>Price: $56,75</p>
+                <p>Dealer: AutoWorld Inc</p>
+            </div>
+        </div>
+
+        <div class="car-card" onclick="toggleDetails('car15')">
+            <img src="CatalogueImg\Toyota chr 2021.jpg" alt="Car 2" class="car-image">
+            <h3>Toyota CHR</h3>
+            <button>Learn More</button>
+            <div id="car15-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car15')">X</span>
+                <h4>Details</h4>
+                <p>Features: 2.0-liter I-4 Engine</p>
+                <p>Price: $30,915</p>
+                <p>Dealer: AutoWorld Inc</p>
+            </div>
+        </div>
+
+        <div class="car-card" onclick="toggleDetails('car16')">
+            <img src="CatalogueImg\Toyota Sienna Woodland Edition 2022.jpg" alt="Car 2" class="car-image">
+            <h3>Toyota Sienna</h3>
+            <button>Learn More</button>
+            <div id="car16-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car16')">X</span>
+                <h4>Details</h4>
+                <p>Features: 2.5-liter I-4 Engine</p>
+                <p>Price: $46,715</p>
+                <p>Dealer: AutoWorld Inc</p>
+            </div>
+        </div>
+
+        <div class="car-card" onclick="toggleDetails('car17')">
+            <img src="CatalogueImg\Toyota Unveils 2022 Land Cruiser, Brings New Styling And Technology To Global Market.jpg" alt="Car 2" class="car-image">
+            <h3>Toyota Land Cruiser</h3>
+            <button>Learn More</button>
+            <div id="car17-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car17')">X</span>
+                <h4>Details</h4>
+                <p>Features: 300 Series V6 diesel Engine</p>
+                <p>Price: $60,000</p>
+                <p>Dealer: AutoWorld Inc</p>
+            </div>
+        </div>
+
+        <div class="car-card" onclick="toggleDetails('car18')">
+            <img src="CatalogueImg\'22 Lexus IS300 F Sport.jpg" alt="Car 2" class="car-image">
+            <h3>Lexus IS300</h3>
+            <button>Learn More</button>
+            <div id="car18-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car18')">X</span>
+                <h4>Details</h4>
+                <p>Features: 2.0-liter V4 Engine</p>
+                <p>Price: $45,085</p>
+                <p>Dealer: AutoWorld Inc</p>
+            </div>
+        </div>
+
+        <div class="car-card" onclick="toggleDetails('car19')">
+            <img src="CatalogueImg\Toyota's Corolla LE Eco Is Fuel-Conscious (and Full of Surprises).jpg" alt="Car 2" class="car-image">
+            <h3>Toyota Corolla LE</h3>
+            <button>Learn More</button>
+            <div id="car19-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car19')">X</span>
+                <h4>Details</h4>
+                <p>Features:  1.8L hybrid Engine</p>
+                <p>Price: $22,000</p>
+                <p>Dealer: AutoWorld Inc</p>
+            </div>
+        </div>
+
+        <div class="car-card" onclick="toggleDetails('car20')">
+            <img src="CatalogueImg\VELOSTER Live Loud _ Coupe - Hyundai Worldwide.jpg" alt="Car 2" class="car-image">
+            <h3>Hyundai Veloster</h3>
+            <button>Learn More</button>
+            <div id="car20-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car20')">X</span>
+                <h4>Details</h4>
+                <p>Features: turbocharged 2.0-liter four-cylinder</p>
+                <p>Price: $33,595</p>
+                <p>Dealer: AutoWorld Inc</p>
+            </div>
+        </div>
+
+        <div class="car-card" onclick="toggleDetails('car21')">
+            <img src="CatalogueImg\Mercedes-Benz GLC 2023.jpg" alt="Car 2" class="car-image">
+            <h3>Mercedes Benz GLC</h3>
+            <button>Learn More</button>
+            <div id="car21-details" class="details">
+                <span class="close-button" onclick="toggleDetails('car21')">X</span>
+                <h4>Details</h4>
+                <p>Features: 2.0-liter V4 Engine</p>
+                <p>Price: $50,100</p>
+                <p>Dealer: AutoWorld Inc</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="conatiner-fliud brand-con">
+        <div class="row">
+            <div class="col">
+                <section id="toComparison">
+                    <div>
+                        <img src="CatalogueImg\Free Photo _ Clueless black woman with puzzled expression, has doubtful expression, shruggs shouldes, purses lips.jpg" alt="">
+                        <h2>Having a hard time choosing which to buy&#129300; 
+                            <span>
+                                <a href="Comparison.html">
+                                Click Here &rarr;
+                                </a>
+                            </span>
+                        </h2>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="conatiner-fliud brand-con">
+        <div class="row">
+            <div class="col">
+                <footer>
+                    <section>
+                        <div id="socials">
+                            <span>Follow Us:
+                                <a href="www.facebook.com">
+                                    <img src="Homepictures\icons8-facebook-120.png" alt="" width="30">
+                                </a>
+                                <a href="www.instagram.com">
+                                    <img src="Homepictures\pngtree-instagram-social-flat-silhouette-icons-png-image_6315977.png"
+                                        alt="" width="30">
                                     </a>
-                                    <a href="www.instagram.com">
-                                        <img src="Homepictures\pngtree-instagram-social-flat-silhouette-icons-png-image_6315977.png"
-                                            alt="" width="30">
-                                    </a>
-                                    <a href="www,pintrest.com">
-                                        <img src="Homepictures\icons8-pinterest-120.png" alt="" width="30">
-                                    </a>
-                                    <a href="www.twitter.com">
-                                        <img src="Homepictures\icons8-twitter-150.png" alt="" width="30">
-                                    </a>
-                                    <hr>
-                                </span>
-                            </div>
+                                <a href="www,pintrest.com">
+                                    <img src="Homepictures\icons8-pinterest-120.png" alt="" width="30">
+                                </a>
+                                <a href="www.twitter.com">
+                                    <img src="Homepictures\icons8-twitter-150.png" alt="" width="30">
+                                </a>
+                                <hr>
+                            </span>
+                        </div>
 
-                            <div class="policies">
-                                <span>
-                                    <a href="#">PRIVACY POLICY</a>
-                                    <a href="#">COPYRIGHT</a>
-                                    <a href="#">LEGAL POLICY</a>
-                                    <a href="#">COOKIE POLICY</a>
-                                </span>
-                            </div>
+                        <div class="policies">
+                            <span>
+                                <a href="#">PRIVACY POLICY</a>
+                                <a href="#">COPYRIGHT</a>
+                                <a href="#">LEGAL POLICY</a>
+                                <a href="#">COOKIE POLICY</a>
+                            </span>
+                        </div>
 
-                            <div class="rights">
-                                <p>&copy;2023 AutoWorld All Rights Reserved</p>
-                            </div>
-                        </section>
-                    </footer>
-                </div>
+                        <div class="rights">
+                            <p>&copy;2023 AutoWorld All Rights Reserved</p>
+                        </div>
+                    </section>
+                </footer>
             </div>
         </div>
-
+    </div>
 </body>
-
 </html>
