@@ -27,6 +27,9 @@ nav div img{
 nav li{
     display: inline;
 }
+.active{
+    color: green;
+}
 nav li a{
     text-decoration: none;
     color: #000;

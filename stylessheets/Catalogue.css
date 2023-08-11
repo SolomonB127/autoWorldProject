@@ -34,7 +34,9 @@ nav li a{
     position: relative;
     margin-right: 50px;
 }
-
+.active{
+    color: green;
+}
 nav li a::after{
     content: '';
     width: 0%;
